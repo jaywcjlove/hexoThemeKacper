@@ -49,7 +49,3 @@ fancybox: true  #开启fancybox效果
 google_analytics: 
 favicon: /css/favicon.ico
 logo: /css/logo.png
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:

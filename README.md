@@ -16,7 +16,7 @@ $ git clone https://github.com/jaywcjlove/hexoThemeKacper.git themes/hexoThemeKa
 ### Update
 
 ``` bash
-cd themes/icarus
+cd themes/hexoThemKacper
 git pull
 ```
 
@@ -30,7 +30,7 @@ Modify `theme` setting in `_config.yml` to `hexoThemKacper`.
 
 `/themes/_config.yml` 说明
 
-```
+```python
 # Header
 menu: #导航栏连接
   Home: /  

@@ -1,0 +1,140 @@
+.archives-wrap
+  margin: block-margin 0
+
+.archives
+  clearfix()
+
+.archive-year-wrap
+  margin-bottom: 1em
+  padding-left: 10px
+
+.archive-year
+  @extend $block-caption
+
+.archives
+  column-gap: 10px
+  @media mq-tablet
+    column-count: 2
+  @media mq-normal
+    column-count: 3
+
+.archive-article
+  avoid-column-break()
+
+.archive-article-inner
+  @extend $block
+  margin-bottom: 5px
+  a
+    display: block
+    padding:3px 3px 3px 6px
+    border-radius:3px
+    color:#333
+    &:hover
+      background:#E4E4E4
+      color:#000BFF
+    &:active
+      background: #7D7D7D;
+      color: #FFF;
+    time
+      font-size:12px
+      color:#C5C5C5
+
+.archive-article-title
+  text-decoration: none
+  font-weight: bold
+  color: color-default
+  transition: color 0.2s
+  line-height: line-height
+  &:hover
+    color: color-link
+
+.archive-article-footer
+  margin-top: 1em
+
+.archive-article-date
+  color: color-grey
+  text-decoration: none
+  font-size: 0.85em
+  line-height: 1em
+  margin-bottom: 0.5em
+  display: block
+
+#page-nav
+  clearfix()
+  margin: block-margin auto
+  background: #fff
+  box-shadow: 1px 2px 3px #ddd
+  border: 1px solid color-border
+  border-radius: 3px
+  text-align: center
+  color: color-grey
+  overflow: hidden
+  a, span
+    padding: 10px 20px
+    line-height: 1
+    height: 2ex
+  a
+    color: color-grey
+    text-decoration: none
+    &:hover
+      background: color-grey
+      color: #fff
+  .prev
+    float: left
+  .next
+    float: right
+  .page-number
+    display: inline-block
+    @media mq-mobile
+      display: none
+  .current
+    color: color-default
+    font-weight: bold
+  .space
+    color: color-border
+
+
+
+
+.category-list
+  padding: 0 0 50px 0;
+  a
+    color: #222
+    sup
+      color:#BABABA
+      font-size:10px
+      vertical-align: super;
+      display:inline-block
+      padding:0 4px 0 4px;
+  .category-tag
+    background:#CCCCCC
+    border-radius:3px
+    display:inline-block
+    padding:0 3px 0 3px
+  .tag-list
+    padding:0 0 30px 0
+    a
+      border: 1px dashed #AFAFAF
+      background: #DDD;
+      border-radius: 3px;
+      padding: 0px 0 2px 4px;
+      margin: 4px 0 0 0;
+      display: inline-block
+      &:hover
+        background: #CCC;
+  .tag_name
+    font-weight:bold
+  h2
+    margin:20px 0 5px 0
+  article
+    border-left:2px solid #D6D6D6
+    padding: 6px 0 6px 8px
+    margin: 0 10px 0 10px
+    line-height:23px
+    a
+      padding:0 3px 0 3px
+      &:hover
+        background:#333
+        color:#fff
+        border-radius: 3px;
+      

@@ -1,0 +1,26 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){%>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        </div>
+        <div class="right">
+            <% for(a in config.social){%>
+                <a href="<%=config.social[a]%>"><%=a%></a>
+            <%}%>
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+<% if (theme.fancybox){ %>
+  <%- css('fancybox/jquery.fancybox') %>
+  <%- js('fancybox/jquery.fancybox.pack') %>
+<% } %>
+
+<%- js('js/script') %>

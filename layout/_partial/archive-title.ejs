@@ -1,0 +1,20 @@
+<%
+var title = ""
+if(page.archive) {
+  if(page.year){
+    title = page.year + (page.month ? '/' + page.month : '');
+  }else title = "归档";
+}else if(page.layout == "tags"){
+  	title = "标签"
+}else if(page.layout=="category"){
+	title="类别"
+}else if(page.tag){
+	title=page.tag
+}%>
+
+<header class="article-header article">
+  <h1 class="article-title" itemprop="name">
+    <%=title%>
+  </h1>
+</header>
+

@@ -1,0 +1,21 @@
+<%if(index){ %>
+<div class="article_box">
+    <%
+      var art = theme.article_index,art_arr
+      for (var i = 0; i < art.length; i++) { 
+      art_arr = art[i]
+    %>
+    <article class="article_index">
+        <h4><i class="<%=art_arr.icon%>"></i><%=art_arr.title%></h4>
+        <p>
+        <%if(art_arr.title == "Github"){%>
+            <iframe src="<%=art_arr.content%>&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe><iframe src="<%=art_arr.content%>&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+        <%}else{%>
+        <%=art_arr.content%>
+        <%}%>
+        </p>
+    </article>
+    <%}%>
+    <div class="clear"></div>
+</div>
+<%}%>

@@ -1,0 +1,25 @@
+<%
+var len = site.categories.sort('name').length;
+%>
+
+<%- partial('_partial/archive-title', {page: page}) %>
+
+<div class="category-list">
+	<div class="tag-list">
+	    <% site.categories.sort('name').each(function(item){ %>
+	    <a class="tag_name" data-src="<%- config.root %><%- item.path %>" href="#<%= item.name %>" title="<%= item.name %>"><span><%= item.name %></span><sup>(<%= item.posts.length %>)</sup></a>
+	    <% }); %>
+	</div>
+
+    <% site.categories.sort('name').each(function(item){%>
+    <a data-src="<%- config.root %><%- item.path %>" href="<%- config.root %><%= item.path %>" title="<%= item.name %>"><span id="<%= item.name %>"><%= item.name %></span><sup>(<%= item.posts.length %>)</sup></a>
+		<article>
+		<% item.posts.each(function(obj) { %>
+			
+			<div><a href="<%- config.root %><%=obj.path%>"><%=obj.title%></a></div>
+		<%})%>
+		</article>
+    <% }); %>
+</div>
+    
+    

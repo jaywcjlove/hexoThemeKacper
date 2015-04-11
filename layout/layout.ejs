@@ -1,0 +1,15 @@
+<%- partial('_partial/head') %>
+<body>
+<div id="container"> 
+    <div id="wrap">
+	<%- partial('_partial/header') %>
+		<div class="outer">
+		<%- body %>
+		</div>
+		<%- partial('_partial/footer') %>
+  	</div>
+	<%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+</div>
+</body>
+</html>
+

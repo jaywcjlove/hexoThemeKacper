@@ -1,0 +1,55 @@
+# Header
+menu: #导航栏连接
+  Home: /
+  API: /API 
+  Tags: /tags
+  # Category: /category
+  Archives: /archives #/archives #归档页面URL 自定义页面标题: /自定义页面URL
+  About: /about
+  Github: https://github.com/JSLite/JSLite
+
+
+
+
+
+rss: /atom.xml #rss地址  默认即可
+
+#feed:
+#  type: atom       #feed 类型 (atom/rss2)
+#  path: /atom.xml   #rss 路径
+#  limit: 20        #在 rss 中最多生成的文章数(0显示所有)
+
+
+#icon http://fontawesome.io/
+#首页显示
+article_index:
+  -  title: 低廉学习成本低
+     content: 与jQuery有着类似的api，模仿jQuery的语法规范，并不是100%的覆盖。如果你会用jQuery，那么你也会用JSLite。
+     icon: icon-book
+  -  title: 快执行并下载
+     content: JSLite通用库只有5-10k，没有大量的兼容代码，在先进浏览器里面跑起来没有负担。为了减小代码量，提高性能，组件再插件化，兼容iOS3+ / android2.1+。
+     icon: icon-bolt
+  -  title: 为未来web做打算
+     content: 让中国再次和世界同步，拥抱现代浏览器。未来总会接触到移动端开发，还好移动端开发环境还不算恶劣。
+     icon: icon-lab
+  -  title: Github #Github
+     content: http://ghbtns.com/github-btn.html?user=JSLite&repo=JSLite
+     icon: icon-github-alt
+
+
+
+# Content
+excerpt_link: Read More  #阅读更多的文字显示
+fancybox: true  #开启fancybox效果 
+
+
+
+
+# Miscellaneous #社交网络和统计连接地址
+google_analytics: 
+favicon: /css/favicon.ico
+logo: /css/logo.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:

@@ -1,0 +1,219 @@
+// https://github.com/chriskempson/tomorrow-theme
+highlight-background = #2d2d2d
+highlight-current-line = #393939
+highlight-selection = #515151
+highlight-foreground = #cccccc
+highlight-comment = #999999
+highlight-red = #DB5F62
+highlight-orange = #f99157
+highlight-yellow = #ffcc66
+highlight-green = #4A9C4A
+highlight-aqua = #66cccc
+highlight-blue = #6699cc
+highlight-purple = #B95AB9
+
+$code-block
+  background: #F4F4F4
+  margin: 0 0
+  padding: 12px 15px
+  overflow: auto
+  color: #424242
+  border-radius:3px
+  line-height: 18px
+
+$line-numbers
+  color: #666
+  font-size: 0.85em
+
+$highlight-code
+  text-shadow: 0 1px white;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  font-size:12px;
+  padding: .1em;
+  border-radius: .3em;
+
+#content table th, #content table td
+ 
+.article-entry
+  pre, code
+    font-family: font-mono
+  code
+    background: #f5f2f0;
+    color: #F50000;
+    text-shadow: 0 1px #fff
+    padding: 0.1em 0.3em 0 0.3em
+    border-radius: 3px
+    display: inline-block
+    vertical-align: text-top
+    border:1px solid rgb(226, 226, 226)
+    line-height: 12px
+    @extend $highlight-code
+  pre
+    @extend $code-block
+    code
+      background: none
+      text-shadow: none
+      padding: 0
+  .highlight
+    @extend $code-block
+    pre
+      border: none
+      margin: 0
+      padding: 0
+      line-height: 16px
+      font-weight: normal
+      @extend $highlight-code
+    table
+      margin: 0
+      width: auto
+    td
+      border: none
+      padding: 0
+    figcaption
+      clearfix()
+      font-size: 0.85em
+      color: highlight-comment
+      line-height: 1em
+      margin-bottom: 1em
+      a
+        float: right
+    .gutter pre
+      @extend $line-numbers
+      text-align: right
+      border-radius: 0
+      padding-right: 6px
+      border-right: 1px #D2D2D2 solid
+      margin-right: 10px
+    .line
+      height: font-size * line-height
+  .gist
+    margin: 0 article-padding * -1
+    border-style: solid
+    border-color: color-border
+    border-width: 1px 0
+    background: highlight-background
+    padding: 15px article-padding 15px 0
+    .gist-file
+      border: none
+      font-family: font-mono
+      margin: 0
+      .gist-data
+        background: none
+        border: none
+        .line-numbers
+          @extend $line-numbers
+          background: none
+          border: none
+          padding: 0 20px 0 0
+        .line-data
+          padding: 0 !important
+      .highlight
+        margin: 0
+        padding: 0
+        border: none
+      .gist-meta
+        background: highlight-background
+        color: highlight-comment
+        font: 0.85em font-sans
+        text-shadow: 0 0
+        padding: 0
+        margin-top: 1em
+        margin-left: article-padding
+        a
+          color: color-link
+          font-weight: normal
+          &:hover
+            text-decoration: underline
+
+pre
+  .comment
+  .title
+    color: highlight-comment
+  .variable
+  .attribute
+  .tag
+  .regexp
+  .ruby .constant
+  .xml .tag .title
+  .xml .pi
+  .xml .doctype
+  .html .doctype
+  .css .id
+  .css .class
+  .css .pseudo
+    color: highlight-red
+  .number
+  .preprocessor
+  .built_in
+  .literal
+  .params
+  .constant
+    color: highlight-orange
+  .class
+  .ruby .class .title
+  .css .rules .attribute
+    color: highlight-green
+  .string
+  .value
+  .inheritance
+  .header
+  .ruby .symbol
+  .xml .cdata
+    color: highlight-green
+  .css .hexcolor
+    color: highlight-aqua
+  .function
+  .python .decorator
+  .python .title
+  .ruby .function .title
+  .ruby .title .keyword
+  .perl .sub
+  .javascript .title
+  .coffeescript .title
+    color: highlight-blue
+  .keyword
+  .javascript .function
+    color: highlight-purple
+
+
+
+
+ 
+$table-thtd
+  border: 1px solid #ddd;
+  padding: 6px 13px;
+table
+  max-width: 100%;
+  display: block;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  th
+    padding:0
+    td
+  tr:nth-child(2n)
+    background-color: #f8f8f8;
+    td
+      border: 1px solid #ddd;
+      padding: 6px 13px;
+
+.article-entry 
+  td
+    @extend $table-thtd
+  th 
+    font-weight: bold;
+    background:#EBEBEB
+    @extend $table-thtd

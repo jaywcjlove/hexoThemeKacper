@@ -151,4 +151,4 @@ duoshuo_shortname: your short_name
 
 
 ## 协议
-[MIT](/LICENSE)
+[MIT](/MIT-LICENSE)

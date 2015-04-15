@@ -21,6 +21,12 @@
 <% if (theme.fancybox){ %>
   <%- css('fancybox/jquery.fancybox') %>
   <%- js('fancybox/jquery.fancybox.pack') %>
-<% } %>
+<% }else{%>
+  <script type="text/javascript">
+    $('.article-entry img').css({
+      "display":"inline-block"
+    })
+  </script>
+<%} %>
 
 <%- js('js/script') %>

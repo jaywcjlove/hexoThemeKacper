@@ -40,7 +40,7 @@ article_index:
 
 # Content
 excerpt_link: Read More  #阅读更多的文字显示
-fancybox: true  #开启fancybox效果 
+# fancybox: false  #开启fancybox效果 
 
 
 

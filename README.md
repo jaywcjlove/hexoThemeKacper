@@ -2,6 +2,10 @@
 
 这个是一个hexo.io 的主题，本人生性懒惰，所以主题基于 `landscape` 主题更改的。so...
 
+## Preview
+
+[JSLite.io](http://JSLite.io)
+
 ## Installation
 
 ### Install

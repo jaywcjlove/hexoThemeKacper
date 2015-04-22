@@ -77,7 +77,7 @@ fancybox: true  #开启fancybox效果
 
 
 # Miscellaneous #社交网络和统计连接地址
-google_analytics: 
+baidu_analytics: //hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960 
 favicon: /css/favicon.ico
 logo: /css/logo.png
 ```

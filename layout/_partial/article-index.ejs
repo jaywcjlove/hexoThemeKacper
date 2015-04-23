@@ -9,7 +9,9 @@
         <h4><i class="<%=art_arr.icon%>"></i><%=art_arr.title%></h4>
         <p>
         <%if(art_arr.title == "Github"){%>
-            <iframe src="<%=art_arr.content%>&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe><iframe src="<%=art_arr.content%>&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+            <a target="_blank" href="https://github.com/<%=art_arr.content%>/network"><img src="https://img.shields.io/github/forks/<%=art_arr.content%>.svg" /></a>
+            <a target="_blank" href="https://github.com/<%=art_arr.content%>/stargazers"><img src="https://img.shields.io/github/stars/<%=art_arr.content%>.svg" /></a>
+            <a target="_blank" href="https://github.com/<%=art_arr.content%>/issues"><img src="https://img.shields.io/github/issues/<%=art_arr.content%>.svg" /></a>
         <%}else{%>
         <%=art_arr.content%>
         <%}%>

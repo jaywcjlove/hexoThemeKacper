@@ -33,7 +33,7 @@ article_index:
      content: 让中国再次和世界同步，拥抱现代浏览器。未来总会接触到移动端开发，还好移动端开发环境还不算恶劣。
      icon: icon-lab
   -  title: Github #Github
-     content: http://ghbtns.com/github-btn.html?user=JSLite&repo=JSLite
+     content: JSLite/JSLite
      icon: icon-github-alt
 
 

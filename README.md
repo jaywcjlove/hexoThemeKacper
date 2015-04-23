@@ -66,7 +66,7 @@ article_index:
      content: 让中国再次和世界同步，拥抱现代浏览器。未来总会接触到移动端开发，还好移动端开发环境还不算恶劣。
      icon: icon-lab
   -  title: Github # Github这里比较特殊
-     content: http://ghbtns.com/github-btn.html?user=JSLite&repo=JSLite
+     content: JSLite/JSLite # github 仓库地址，例如https://github.com/jaywcjlove/hexoThemeKacper 这里就填写  jaywcjlove/hexoThemeKacper
      icon: icon-github-alt
 
 

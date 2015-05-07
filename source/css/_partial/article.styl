@@ -1,13 +1,5 @@
 .page-toc
-  position: relative;
-  float: right;
-  margin: 0px 0 0 20px;
-  background: #F4F4F4;
-  padding: 10px;
-  border-radius: 0px 0px 5px 5px;
-  max-width: 250px;
-  display: block;
-  overflow: hidden;
+  float: right
   .toc-number 
     color: rgba(51, 51, 51, 0.34);
   @media mq-tablet
@@ -16,8 +8,19 @@
     display:none
   ul, ol, dl, li
     list-style:none
-ol.toc
-  margin: 0;
+  ol.toc
+    margin: 0
+    position: relative
+    margin: 0px 0 0 20px
+    background: #F4F4F4
+    padding: 10px
+    border-radius: 0px 0px 5px 5px
+    max-width: 250px
+    display: block
+    overflow: hidden
+    top:0
+    right:0
+    z-index:999
 
 .article
   margin: block-margin 0

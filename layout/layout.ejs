@@ -1,14 +1,21 @@
 <%- partial('_partial/head') %>
 <body>
 <div id="container"> 
+
+    <%if(page.type !== 'API'){%>
     <div id="wrap">
-	<%- partial('_partial/header') %>
+	   <%- partial('_partial/header') %>
 		<div class="outer">
 		<%- body %>
 		</div>
 		<%- partial('_partial/footer') %>
   	</div>
-	<%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+    <%}else{%>
+        <div class="article_api">
+            <%- body %>
+        </div>
+    <%}%>
 </div>
 </body>
 </html>

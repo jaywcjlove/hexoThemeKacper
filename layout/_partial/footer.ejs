@@ -1,3 +1,5 @@
+<%if(page.type !== 'API'){%>
+
 <footer id="footer">
   <% if (theme.sidebar === 'bottom'){%>
     <%- partial('_partial/sidebar') %>
@@ -39,3 +41,4 @@ $(function(){
 <%} %>
 
 <%- js('js/script') %>
+<%}%>

@@ -64,7 +64,29 @@
   padding: 0 0 27px 0;
   a&:hover
     color: color-link
-
+.article_api
+  padding:0 0px 0 270px
+  background-color: #fff;
+  @media mq-mobile
+    padding:0 0px 0 0px
+  .article-inner
+    padding:0 20px
+    border-radius:0
+  .article-entry
+    padding:0 0 0 0
+    a 
+      img
+        display: inline-block;
+  .page-toc
+    position: fixed
+    overflow: auto
+    left: 0
+    height: 100%
+    background:#F4F4F4
+    @media mq-tablet
+      display:block
+    ol.toc
+      margin:0
 .article-entry
   @extend $base-style
   clearfix()

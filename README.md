@@ -1,4 +1,4 @@
-# hexoThemKacper
+# hexoThemeKacper
 
 这个是一个hexo.io 的主题，本人生性懒惰，所以主题基于 `landscape` 主题更改的。so...
 
@@ -14,19 +14,19 @@
 $ git clone https://github.com/jaywcjlove/hexoThemeKacper.git themes/hexoThemeKacper
 ```
 
-**hexoThemKacper requires Hexo 3.0 and above.**
+**hexoThemeKacper requires Hexo 3.0 and above.**
 
 
 ### Update
 
 ``` bash
-cd themes/hexoThemKacper
+cd themes/hexoThemeKacper
 git pull
 ```
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `hexoThemKacper`.
+Modify `theme` setting in `_config.yml` to `hexoThemeKacper`.
 
 ## Usage
 

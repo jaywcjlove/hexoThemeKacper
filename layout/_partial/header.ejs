@@ -2,7 +2,11 @@
 <% 
 var ispage = false
     hdpage =""
-if(!is_home()){
+    ishome = url_for(page.path) === '/index.html'? true :false
+
+console.log(url_for(page.path));
+
+if(!ishome){
     hdpage ="hdpage"
     ispage = true
 }else{
